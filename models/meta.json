@@ -1,0 +1,295 @@
+{
+  "sklearn_version": "1.8.0",
+  "n_training_rows": 9994,
+  "training_date_range": [
+    "2014-01-03",
+    "2017-12-30"
+  ],
+  "states": [
+    "Alabama",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "District of Columbia",
+    "Florida",
+    "Georgia",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming"
+  ],
+  "state_to_region": {
+    "Kentucky": "South",
+    "California": "West",
+    "Florida": "South",
+    "North Carolina": "South",
+    "Washington": "West",
+    "Texas": "Central",
+    "Wisconsin": "Central",
+    "Utah": "West",
+    "Nebraska": "Central",
+    "Pennsylvania": "East",
+    "Illinois": "Central",
+    "Minnesota": "Central",
+    "Michigan": "Central",
+    "Delaware": "East",
+    "Indiana": "Central",
+    "New York": "East",
+    "Arizona": "West",
+    "Virginia": "South",
+    "Tennessee": "South",
+    "Alabama": "South",
+    "South Carolina": "South",
+    "Oregon": "West",
+    "Colorado": "West",
+    "Iowa": "Central",
+    "Ohio": "East",
+    "Missouri": "Central",
+    "Oklahoma": "Central",
+    "New Mexico": "West",
+    "Louisiana": "South",
+    "Connecticut": "East",
+    "New Jersey": "East",
+    "Massachusetts": "East",
+    "Georgia": "South",
+    "Nevada": "West",
+    "Rhode Island": "East",
+    "Mississippi": "South",
+    "Arkansas": "South",
+    "Montana": "West",
+    "New Hampshire": "East",
+    "Maryland": "East",
+    "District of Columbia": "East",
+    "Kansas": "Central",
+    "Vermont": "East",
+    "Maine": "East",
+    "South Dakota": "Central",
+    "Idaho": "West",
+    "North Dakota": "Central",
+    "Wyoming": "West",
+    "West Virginia": "East"
+  },
+  "sub_to_category": {
+    "Bookcases": "Furniture",
+    "Chairs": "Furniture",
+    "Labels": "Office Supplies",
+    "Tables": "Furniture",
+    "Storage": "Office Supplies",
+    "Furnishings": "Furniture",
+    "Art": "Office Supplies",
+    "Phones": "Technology",
+    "Binders": "Office Supplies",
+    "Appliances": "Office Supplies",
+    "Paper": "Office Supplies",
+    "Accessories": "Technology",
+    "Envelopes": "Office Supplies",
+    "Fasteners": "Office Supplies",
+    "Supplies": "Office Supplies",
+    "Machines": "Technology",
+    "Copiers": "Technology"
+  },
+  "discount_values": [
+    0.0,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.32,
+    0.4,
+    0.45,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "quantity_range": [
+    1,
+    14
+  ],
+  "sales_p99": 2481.69,
+  "unit_price_by_sub": {
+    "Accessories": {
+      "min": 0.99,
+      "p10": 11.41,
+      "median": 33.99,
+      "p90": 123.99,
+      "max": 421.95
+    },
+    "Appliances": {
+      "min": 2.22,
+      "p10": 8.39,
+      "median": 40.98,
+      "p90": 208.16,
+      "max": 363.25
+    },
+    "Art": {
+      "min": 1.34,
+      "p10": 2.15,
+      "median": 4.28,
+      "p90": 24.82,
+      "max": 173.91
+    },
+    "Binders": {
+      "min": 1.68,
+      "p10": 3.81,
+      "median": 8.88,
+      "p90": 58.1,
+      "max": 1889.99
+    },
+    "Bookcases": {
+      "min": 30.98,
+      "p10": 58.14,
+      "median": 130.98,
+      "p90": 280.98,
+      "max": 880.98
+    },
+    "Chairs": {
+      "min": 25.98,
+      "p10": 60.83,
+      "median": 129.99,
+      "p90": 308.98,
+      "max": 700.98
+    },
+    "Copiers": {
+      "min": 199.99,
+      "p10": 299.99,
+      "median": 549.99,
+      "p90": 699.99,
+      "max": 3499.99
+    },
+    "Envelopes": {
+      "min": 2.04,
+      "p10": 3.62,
+      "median": 10.94,
+      "p90": 60.98,
+      "max": 162.93
+    },
+    "Fasteners": {
+      "min": 1.14,
+      "p10": 1.76,
+      "median": 3.29,
+      "p90": 6.08,
+      "max": 11.48
+    },
+    "Furnishings": {
+      "min": 1.74,
+      "p10": 4.78,
+      "median": 17.67,
+      "p90": 75.98,
+      "max": 209.84
+    },
+    "Labels": {
+      "min": 2.61,
+      "p10": 2.88,
+      "median": 4.13,
+      "p90": 14.8,
+      "max": 98.31
+    },
+    "Machines": {
+      "min": 13.11,
+      "p10": 41.95,
+      "median": 379.99,
+      "p90": 1699.99,
+      "max": 7546.16
+    },
+    "Paper": {
+      "min": 2.18,
+      "p10": 4.98,
+      "median": 6.54,
+      "p90": 48.04,
+      "max": 104.85
+    },
+    "Phones": {
+      "min": 1.98,
+      "p10": 12.99,
+      "median": 88.95,
+      "p90": 274.99,
+      "max": 649.83
+    },
+    "Storage": {
+      "min": 2.98,
+      "p10": 11.29,
+      "median": 38.94,
+      "p90": 179.33,
+      "max": 647.89
+    },
+    "Supplies": {
+      "min": 2.08,
+      "p10": 3.65,
+      "median": 8.88,
+      "p90": 119.31,
+      "max": 1637.53
+    },
+    "Tables": {
+      "min": 15.23,
+      "p10": 82.51,
+      "median": 209.37,
+      "p90": 381.1,
+      "max": 550.98
+    }
+  },
+  "thresholds": {
+    "balanced": 0.5,
+    "catch_most_losses": 0.15
+  },
+  "metrics": {
+    "random_split": {
+      "profit_r2": 0.915,
+      "profit_mae": 19.759,
+      "profit_median_abs_error": 3.746,
+      "loss_auc": 0.991,
+      "loss_precision_at_0.5": 0.897,
+      "loss_recall_at_0.5": 0.864,
+      "loss_precision_at_0.15": 0.729,
+      "loss_recall_at_0.15": 0.979
+    },
+    "time_split_2017": {
+      "profit_r2": 0.783,
+      "profit_mae": 22.189,
+      "profit_median_abs_error": 3.857,
+      "loss_auc": 0.991,
+      "loss_precision_at_0.5": 0.917,
+      "loss_recall_at_0.5": 0.873,
+      "loss_precision_at_0.15": 0.735,
+      "loss_recall_at_0.15": 0.977
+    }
+  }
+}

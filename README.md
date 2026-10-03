@@ -141,28 +141,6 @@ These warnings help communicate when a prediction should be treated as a rough e
 
 --------------------------------------------------------------------------------------------------------
 
-Project Structure
-
-text
-superstore-ml/
-│
-├── app.py
-├── features.py
-├── train_final.py
-├── requirements.txt
-│
-├── models/
-│   ├── clf.joblib
-│   ├── reg.joblib
-│   └── meta.json
-│
-├── data/
-│   └── Sample - Superstore.csv
-│
-└── superstore_ml_final.ipynb
-
---------------------------------------------------------------------------------------------------------
-
 File Description
 
 | File                           | Description                                       |

@@ -65,7 +65,11 @@ with left:
     )
     qmin, qmax = meta["quantity_range"]
     quantity = st.number_input("Quantity", min_value=1, max_value=50, value=2, step=1)
-    discount = st.select_slider("Discount", options=meta["discount_values"], value=0.0, format_func=lambda d: f"{d:.0%}")
+    discount_pct = st.slider("Discount (%)", min_value=0, max_value=80, value=0, step=1, format="%d%%",
+                             help="The training data only contains discounts of "
+                                  + ", ".join(f"{d:.0%}" for d in meta["discount_values"])
+                                  + ". Values in between are interpolated by the model.")
+    discount = discount_pct / 100
 
 with right:
     st.subheader("Location")
@@ -89,6 +93,15 @@ if p_loss >= threshold:
     st.error(f"⚠️ **Likely loss-making.** Probability {p_loss:.0%} is above the alert threshold ({threshold:.0%}).")
 else:
     st.success(f"✅ **Likely profitable.** Probability of a loss is {p_loss:.0%} (alert threshold {threshold:.0%}).")
+
+# ------------------------------------------------------------------ the two models can disagree
+margin = profit_est / sales if sales > 0 else 0
+if p_loss < threshold and profit_est < 0:
+    st.warning("⚠️ **Mixed signal:** the loss probability is below the alert threshold, but the expected profit is "
+               "negative. Treat this order as risky.")
+elif p_loss >= threshold and 0 < margin < 0.10:
+    st.info("ℹ️ **Mixed signal:** the classifier flags a likely loss, but the expected profit is slightly positive. "
+            "The order is probably close to break-even.")    
 
 # ------------------------------------------------------------------ input sanity warnings
 notes = []
